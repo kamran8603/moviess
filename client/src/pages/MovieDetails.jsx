@@ -85,7 +85,7 @@ const MovieDetails = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5100/api/users/favorites', {
+      const response = await fetch('https://moviebuster-1r3g.onrender.com/api/users/favorites', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -121,7 +121,7 @@ const MovieDetails = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5100/api/users/watchlist', {
+      const response = await fetch('https://moviebuster-1r3g.onrender.com/api/users/watchlist', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -55,7 +55,7 @@ const FavoritesContent = () => {
         const user = JSON.parse(localStorage.getItem('user'));
         
         try {
-            const response = await fetch('http://localhost:5100/api/users/favorites', {
+            const response = await fetch('https://moviebuster-1r3g.onrender.com/api/users/favorites', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -30,7 +30,7 @@ const Login = () => {
             try {
                 console.log('Attempting login with:', { email, password }); // Debug log
 
-                const response = await fetch('http://localhost:5100/api/auth/login', {
+                const response = await fetch('https://moviebuster-1r3g.onrender.com/api/auth/login', {
                     method: 'POST',
                     headers: { 
                         'Content-Type': 'application/json'
@@ -56,7 +56,7 @@ const Login = () => {
             }
         } else if (activeView === 'register') {
             try {
-                const response = await fetch('http://localhost:5100/api/auth/register', {
+                const response = await fetch('https://moviebuster-1r3g.onrender.com/api/auth/register', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ 

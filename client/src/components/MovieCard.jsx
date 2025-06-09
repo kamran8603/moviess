@@ -45,7 +45,7 @@ const MovieCard = ({ movie }) => {
         movieId: Number(movie.id)
       }); // Debug log
 
-      const response = await fetch('http://localhost:5100/api/users/favorites', {
+      const response = await fetch('https://moviebuster-1r3g.onrender.com/api/users/favorites', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ const MovieCard = ({ movie }) => {
 
     try {
       // Use user.id consistently across the application
-      const response = await fetch('http://localhost:5100/api/users/watchlist', {
+      const response = await fetch('https://moviebuster-1r3g.onrender.com/api/users/watchlist', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
