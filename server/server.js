@@ -35,7 +35,7 @@ mongoose.connection.on('error', (err) => {
 });
 
 app.use(cors({
-  origin: ['http://localhost:4173', 'http://localhost:5000', 'http://localhost:5173'],
+  origin: ['http://localhost:4173','http://localhost:5173','https://moviebustr.netlify.app'],
   credentials: true
 }));
 
