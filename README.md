@@ -20,15 +20,15 @@ MovieBuster is a full-stack web application for discovering, searching, and mana
 
 ### Home Page
 
-![Home Page](images/screenshot.png)
+![Home Page](images/Screenshot.png)
 
 ### Movie Details
 
-![Movie Details](images/screenshot-2.png)
+![Movie Details](images/Screenshot-2.png)
 
 ### Footer and Navigation
 
-![Footer](images/screenshot-3.png)
+![Footer](images/Screenshot-3.png)
 
 ### Demo (GIF)
 
