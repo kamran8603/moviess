@@ -1,6 +1,6 @@
 # MovieBuster
 
-MovieBuster is a full-stack web application for discovering, searching, and managing your favorite movies and TV shows. It features user authentication, favorites, watchlists, and integrates with The Movie Database (TMDB) API for up-to-date movie and TV data.
+MovieBuster is a full-stack progressive web application for discovering, searching, and managing your favorite movies and TV shows. It features user authentication, favorites, watchlists, and integrates with The Movie Database (TMDB) API for up-to-date movie and TV data.
 
 ---
 
