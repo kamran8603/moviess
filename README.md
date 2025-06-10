@@ -16,6 +16,28 @@ MovieBuster is a full-stack web application for discovering, searching, and mana
 
 ---
 
+## Screenshots
+
+### Home Page
+
+![Home Page](images/screenshot.png)
+
+### Movie Details
+
+![Movie Details](images/screenshot-2.png)
+
+### Footer and Navigation
+
+![Footer](images/screenshot-3.png)
+
+### Demo (GIF)
+
+![Demo](images/Moviebuster.gif)
+
+*Screenshots and demo show the MovieBuster UI, navigation, and movie browsing experience.*
+
+---
+
 ## Tech Stack
 
 - **Frontend:** React, Vite, Tailwind CSS
@@ -23,6 +45,33 @@ MovieBuster is a full-stack web application for discovering, searching, and mana
 - **Authentication:** bcryptjs
 - **API Integration:** TMDB API
 - **Deployment:** Netlify (frontend), Render.com (backend)
+
+---
+
+## Project Structure
+
+```
+movie-buster/
+├── client/                  # Frontend React app
+│   ├── public/              # Public assets
+│   ├── src/                 # Source files
+│   │   ├── components/       # Reusable components
+│   │   ├── pages/            # Page components
+│   │   ├── App.jsx           # Main app component
+│   │   └── index.jsx         # Entry point
+│   ├── .env                  # Environment variables
+│   ├── package.json          # Frontend dependencies and scripts
+│   └── vite.config.js        # Vite configuration
+└── server/                  # Backend Express app
+    ├── config/              # Configuration files
+    ├── controllers/         # Request handlers
+    ├── middleware/          # Custom middleware
+    ├── models/              # Mongoose models
+    ├── routes/              # API routes
+    ├── .env                  # Environment variables
+    ├── package.json          # Backend dependencies and scripts
+    └── server.js            # Entry point
+```
 
 ---
 
