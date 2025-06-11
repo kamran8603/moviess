@@ -7,6 +7,7 @@ import { dirname } from 'path';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
+const JWT_SECRET = "mujwtsecretkey"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -110,7 +111,7 @@ app.post('/api/auth/login', async (req, res) => {
 
         const token = jwt.sign(
             { userId: user._id },
-            process.env.JWT_SECRET || 'fallback_secret',
+            JWT_SECRET || 'fallback_secret',
             { expiresIn: '24h' }
         );
 

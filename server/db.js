@@ -2,7 +2,8 @@ import mongoose from 'mongoose';
 import { config } from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-
+const dbpassi = "KxycwUbBHKoGBbIi" 
+const mongourl = "mongodb+srv://haiderkamran2:KxycwUbBHKoGBbIi@cluster0.o0xrzn4.mongodb.net/"
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -11,11 +12,11 @@ config({ path: join(__dirname, '.env') });
 
 const connectDB = async () => {
     try {
-        if (!process.env.MONGO_URI) {
+        if (!mongourl) {
             throw new Error('MONGO_URI environment variable is not defined');
         }
 
-        await mongoose.connect(process.env.MONGO_URI, {
+        await mongoose.connect(mongourl, {
             serverSelectionTimeoutMS: 30000, // Increased timeout
             socketTimeoutMS: 60000,
             family: 4,
